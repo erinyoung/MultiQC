@@ -16,10 +16,16 @@
 #### Module updates:
 * **bcl2fastq**
     * Added handling of demultiplexing of more than 2 reads
+* **DeDup**
+    * Added handling clusterfactor and JSON logfiles
 * **damageprofiler**
     * Added writing metrics to data output file.
 * **fastp**
     * Fix faulty column handling for the _after filtering_ Q30 rate ([#936](https://github.com/ewels/MultiQC/issues/936))
+* **FastQC**
+    * When including a FastQC section multiple times in one report, the Per Base Sequence Content heatmaps now behave as you would expect.
+* **FastQ Screen**
+    * When including a FastQ Screen section multiple times in one report, the plots now behave as you would expect.
 * **HiC Explorer**
     * Fixed bug where module tries to parse QC_table.txt, a new log file in hicexplorer v2.2.
 * **HTSeq**
@@ -36,12 +42,18 @@
     * Updated broken URL link
 * **RSeQC**
     * Fixed bug where Junction Saturation plot for a single sample was mislabelling the lines.
+    * When including a RSeQC section multiple times in one report, clicking Junction Saturation plot now behaves as you would expect.
 * **Samtools**
     * Utilize in-built `read_count_multiplier` functionality to plot `flagstat` results more nicely
 * **SnpEff**
     * Increased the default summary csv file-size limit from 1MB to 5MB.
 * **VCFTools**
     * Fixed a bug where `tstv_by_qual.py` produced invalid json from infinity-values.
+* **bcl2fastq**
+    * Added handling of demultiplexing of more than 2 reads
+* **snpEff**
+    * Added plot of effects
+
 
 #### New MultiQC Features:
 * Added some installation docs for windows
